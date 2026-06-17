@@ -73,15 +73,6 @@ fun LoginContent(
             modifier = Modifier.fillMaxWidth(0.85f)
         )
 
-        uiState.errorMessage?.let { message ->
-            Text(
-                text = message,
-                color = MaterialTheme.colorScheme.error,
-                style = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier.fillMaxWidth(0.85f)
-            )
-        }
-
         Button(
             onClick = {
                 onEvent(LoginEvent.OnEntrarClick)

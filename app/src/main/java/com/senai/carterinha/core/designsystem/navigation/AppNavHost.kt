@@ -94,11 +94,6 @@ fun AppNavHost(
                     .fillMaxSize()
                     .padding(16.dp),
                 onLoginSuccess = { usuario ->
-                    loggedUser = LoggedUser(
-                        id = usuario.id,
-                        nome = usuario.nome,
-                        token = usuario.token
-                    )
                     navController.navigate(Routes.Home.route) {
                         popUpTo(Routes.Login.route) {
                             inclusive = true
