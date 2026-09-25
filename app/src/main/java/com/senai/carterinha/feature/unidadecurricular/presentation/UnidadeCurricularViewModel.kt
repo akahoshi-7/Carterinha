@@ -2,9 +2,6 @@ package com.senai.carterinha.feature.unidadecurricular.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.room.util.copy
-import com.senai.carterinha.feature.unidadecurricular.data.repository.FakeUnidadeCurricularRepository
-import com.senai.carterinha.feature.unidadecurricular.data.repository.UnidadeCurricularRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
